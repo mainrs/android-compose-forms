@@ -1,6 +1,4 @@
 <resources>
-    <string name="app_name">forms</string>
-
     <string name="error_required">Required</string>
     <string name="error_password">Needs to contain \'?\'</string>
     <string name="error_username_length">Username length between 3 and 8 characters</string>

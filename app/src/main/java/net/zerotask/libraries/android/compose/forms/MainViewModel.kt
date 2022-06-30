@@ -7,6 +7,7 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.stateIn
+import net.zerotask.libraries.android.compose.forms.sample.R
 import net.zerotask.libraries.android.compose.forms.transformers.IdentityTransformer
 import net.zerotask.libraries.android.compose.forms.validators.CharacterLength
 import net.zerotask.libraries.android.compose.forms.validators.NonEmpty

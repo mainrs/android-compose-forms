@@ -8,7 +8,7 @@ group = "com.github.mainrs"
 version = "1.0.0"
 
 android {
-    namespace = "net.zerotask.libraries.android.compose.forms.builtins.ui"
+    namespace = "net.zerotask.libraries.android.compose.forms.ui"
     compileSdk = 32
 
     defaultConfig {
@@ -43,7 +43,7 @@ afterEvaluate {
         publications {
             register<MavenPublication>("release") {
                 groupId = "com.github.mainrs"
-                artifactId = "android-compose-forms-builtins-ui"
+                artifactId = "android-compose-forms-ui"
                 version = "1.0.0"
 
                 afterEvaluate {

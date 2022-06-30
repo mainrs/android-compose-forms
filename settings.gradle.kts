@@ -23,6 +23,6 @@ rootProject.name = "android-compose-forms"
 include(":app")
 include(":library")
 include(":builtins")
-include(":builtins-ui")
+include(":ui")
 
 enableFeaturePreview("VERSION_CATALOGS")

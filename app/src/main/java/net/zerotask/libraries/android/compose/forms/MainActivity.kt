@@ -44,8 +44,7 @@ class MainActivity : ComponentActivity() {
                     FormFieldWithSupportedText(usernameError?.let { stringResource(it) }) {
                         OutlinedTextField(
                             modifier = Modifier.onFocusChanged {
-                                if (it.isFocused) viewModel.form.username.setFocused(true)
-                                else viewModel.form.username.setFocused(false)
+                                viewModel.form.username.focusChanged()
                             },
                             value = username,
                             onValueChange = { viewModel.form.username.setValue(it) },
@@ -57,8 +56,7 @@ class MainActivity : ComponentActivity() {
                     FormFieldWithSupportedText(passwordError?.let { stringResource(it) }) {
                         OutlinedTextField(
                             modifier = Modifier.onFocusChanged {
-                                if (it.isFocused) viewModel.form.password.setFocused(true)
-                                else viewModel.form.password.setFocused(false)
+                                viewModel.form.password.focusChanged()
                             },
                             value = password,
                             onValueChange = { viewModel.form.password.setValue(it) },
