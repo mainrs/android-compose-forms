@@ -1,0 +1,25 @@
+[versions]
+compose = "1.2.0-rc02"
+compose-activity = "1.4.0"
+core = "1.8.0"
+lifecycle = "2.5.0"
+material3 = "1.0.0-alpha14"
+poolingcontainer = "1.0.0-rc01"
+
+
+[libraries]
+androidx-compose-activity = { module = "androidx.activity:activity-compose", version.ref = "compose-activity" }
+androidx-compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
+androidx-compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
+androidx-core = { module = "androidx.core:core-ktx", version.ref = "core" }
+androidx-material3 = { module = "androidx.compose.material3:material3", version.ref = "material3" }
+
+androidx-compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
+androidx-customview = { module = "androidx.customview:customview-poolingcontainer", version.ref = "poolingcontainer" }
+androidx-lifecycle = { module = "androidx.lifecycle:lifecycle-viewmodel-savedstate", version.ref = "lifecycle" }
+
+
+[bundles]
+app = ["androidx-compose-activity", "androidx-compose-ui", "androidx-core", "androidx-material3"]
+builtins-ui = ["androidx-material3"]
+debug = ["androidx-customview", "androidx-lifecycle", "androidx-compose-ui-tooling"]
