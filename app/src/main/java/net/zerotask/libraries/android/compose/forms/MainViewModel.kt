@@ -30,15 +30,15 @@ class MainViewModel : ViewModel() {
             initialValue = "",
             transformer = IdentityTransformer(),
             validators = listOf(
-                NonEmpty(R.string.error_required),
-                CharacterLength(message = R.string.error_username_length, range = 3..8)
+                NonEmpty(error = R.string.error_required),
+                CharacterLength(error = R.string.error_username_length, range = 3..8)
             )
         )
 
         val password: FormField<String, Int, String> = FormField(
             initialValue = "",
             transformer = IdentityTransformer(),
-            validators = listOf(NonEmpty(R.string.error_required), PasswordValidator)
+            validators = listOf(NonEmpty(error = R.string.error_required), PasswordValidator)
         )
 
         val isValid: StateFlow<Boolean> =
